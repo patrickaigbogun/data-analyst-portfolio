@@ -1,0 +1,93 @@
+/* style.css */
+
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #bdc6bf; 
+}
+	
+header {
+	background-color: #1a371f;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+}  
+
+nav {
+  text-align: center;
+}
+
+nav a:hover{
+  background-color: none;
+  text-decoration-line: none;
+}
+
+nav ul.horizontal-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center; /* Center the menu horizontally */
+}
+
+nav ul.horizontal-menu li {
+  margin-right: 20px;
+}
+
+nav ul.horizontal-menu li:last-child {
+  margin-right: 0;
+}
+
+
+nav ul.horizontal-menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255); /* Change this to your desired text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  transition: text-decoration 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+nav ul.horizontal-menu li a:hover {
+  text-decoration: underline;
+  background-color: transparent; /* Set the background color to transparent on hover */
+  transform: scale(1.5); /* Add a slight pop-out effect on hover */
+}
+
+
+/* Remove the highlight effect on hover */
+nav ul.horizontal-menu li a:focus,
+nav ul.horizontal-menu li a:active,
+nav ul.horizontal-menu li a {
+  outline: none;
+  background-color: transparent;
+}
+
+section {
+  max-width: 100%;
+  margin: 5%;
+  background-color: #e9efea;
+  padding: 3%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35); /* Add a subtle box shadow */
+}
+section ul li:hover {
+  background-color: #f0f0f0;
+} 
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer {
+    background-color: #1a371f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.footer-menu {
+  display: contents;
+  max-width: 100%;
+  margin: 0 auto;
+}
