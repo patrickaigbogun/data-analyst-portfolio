@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Routes, Route } from "react-router-dom"
+import Home from './components/Home';
 import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -17,12 +18,13 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
-        {/*  <Route path="/" element={ <Home/> } /> */}
+          <Route path="/" element={ <Home/> } />
           <Route path="./components/About" element={ <About/> } />
           <Route path="./components/Skills" element={ <Skills/> } />
           <Route path="./components/Projects" element={ <Projects/> } />
           <Route path="./components/Contact" element={ <Contact/> } />
           <Route path="./components/Resume" element={ <Resume/> } />
+          <Route path="*" element={ '404 Page Not Found' } />
       </Routes>
       <Footer/>
     </div>
