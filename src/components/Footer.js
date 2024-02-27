@@ -16,7 +16,7 @@ const Footer = () => {
           <h3><i class="fa-solid fa-download"></i></h3>
           <ul>
             <li>
-              <a href="src\files\PATRICK SOD CV.pdf" download>
+              <a href="/cv.pdf">
                 Download Resume
               </a>
             </li>
