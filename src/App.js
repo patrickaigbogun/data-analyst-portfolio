@@ -15,19 +15,21 @@ import './styles.css';
 function App() {
   
   return (
-	<div className="App">
-		<Header/>
-		<Routes>
-			<Route path="/" element={ <Home/> } />
-			<Route path="./components/About.js" element={ <About/> } />
-			<Route path="./components/Skills.js" element={ <Skills/> } />
-			<Route path="./components/Projects.js" element={ <Projects/> } />
-			<Route path="./components/Contact.js" element={ <Contact/> } />
-			<Route path="./components/Resume.js" element={ <Resume/> } />
-			<Route path="*" element={ '404 Page Not Found' } />
-		</Routes>
-	    <Footer/>
-	</div>
+    <div className="App">
+      <Header/>
+      <Routes>
+          <Route path="/" element={ <Home/> } />
+          <Route path="/about" element={ <About/> } />
+          <Route path="/skills" element={ <Skills/> } />
+          <Route path="/projects" element={ <Projects/> } />
+          <Route path="/contacts" element={ <Contact/> } />
+          <Route path="/resume" element={ <Resume/> } />
+          <Route path="*" element={<div>
+            <h1>Error! page not found</h1>
+          </div>} />
+      </Routes>
+      <Footer/>
+    </div>
   );
 }
 
