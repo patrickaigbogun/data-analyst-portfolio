@@ -19,12 +19,14 @@ function App() {
       <Header/>
       <Routes>
           <Route path="/" element={ <Home/> } />
-          <Route path="./components/About" element={ <About/> } />
-          <Route path="./components/Skills" element={ <Skills/> } />
-          <Route path="./components/Projects" element={ <Projects/> } />
-          <Route path="./components/Contact" element={ <Contact/> } />
-          <Route path="./components/Resume" element={ <Resume/> } />
-          <Route path="*" element={ '404 Page Not Found' } />
+          <Route path="/about" element={ <About/> } />
+          <Route path="/skills" element={ <Skills/> } />
+          <Route path="/projects" element={ <Projects/> } />
+          <Route path="/contacts" element={ <Contact/> } />
+          <Route path="/resume" element={ <Resume/> } />
+          <Route path="*" element={<div>
+            <h1>Error! page not found</h1>
+          </div>} />
       </Routes>
       <Footer/>
     </div>
