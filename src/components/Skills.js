@@ -1,11 +1,10 @@
 //Skills.js
 
 import React from 'react';
-import '../styles.css';
 
 const Skills = () => {
   return (
-    <section id="skills" >
+    <div id="skills" >
       <h2>Skills</h2>
       <ul>
         <li>Python <i class="fa-brands fa-python"></i> </li>
@@ -14,7 +13,7 @@ const Skills = () => {
         <li>Excel <i class="fa-solid fa-file-excel"></i> </li>
         <li>Power BI  </li>
       </ul>
-    </section>
+    </div>
   );
 };
 

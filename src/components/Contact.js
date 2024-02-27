@@ -4,7 +4,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <div id="contact">
       <h2>Contact Me</h2>
       <p>
         Feel free to reach out to me through the following channels:
@@ -14,7 +14,7 @@ const Contact = () => {
         <li>LinkedIn: linkedin.com/in/yourusername <i class="fa-brands fa-linkedin"> </i></li>
         <li>Twitter: @yourtwitterhandle<i class="fa-brands fa-x-twitter"></i></li>
       </ul>
-    </section>
+    </div>
   );
 };
 

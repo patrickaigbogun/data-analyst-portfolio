@@ -10,24 +10,24 @@ import Projects from './components/Projects';
 import Contact from './components/Contact'; // Add Contact component
 import Resume from './components/Resume';   // Add Resume component
 import Footer from './components/Footer';
-import './App.css';
+import './styles.css';
 
 function App() {
   
   return (
-    <div className="App">
-      <Header/>
-      <Routes>
-          <Route path="/" element={ <Home/> } />
-          <Route path="./components/About" element={ <About/> } />
-          <Route path="./components/Skills" element={ <Skills/> } />
-          <Route path="./components/Projects" element={ <Projects/> } />
-          <Route path="./components/Contact" element={ <Contact/> } />
-          <Route path="./components/Resume" element={ <Resume/> } />
-          <Route path="*" element={ '404 Page Not Found' } />
-      </Routes>
-      <Footer/>
-    </div>
+	<div className="App">
+		<Header/>
+		<Routes>
+			<Route path="/" element={ <Home/> } />
+			<Route path="./components/About.js" element={ <About/> } />
+			<Route path="./components/Skills.js" element={ <Skills/> } />
+			<Route path="./components/Projects.js" element={ <Projects/> } />
+			<Route path="./components/Contact.js" element={ <Contact/> } />
+			<Route path="./components/Resume.js" element={ <Resume/> } />
+			<Route path="*" element={ '404 Page Not Found' } />
+		</Routes>
+	    <Footer/>
+	</div>
   );
 }
 
